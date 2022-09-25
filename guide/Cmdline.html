@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>命令行 | LuaSTGPlus</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="小巧的跨平台弹幕游戏引擎">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.01a07e0b.css" as="style"><link rel="preload" href="/assets/js/app.6029dc3c.js" as="script"><link rel="preload" href="/assets/js/2.eb6fdccb.js" as="script"><link rel="preload" href="/assets/js/10.e46689ce.js" as="script"><link rel="prefetch" href="/assets/js/11.f045ab39.js"><link rel="prefetch" href="/assets/js/12.7e1b874d.js"><link rel="prefetch" href="/assets/js/13.43f2fc8b.js"><link rel="prefetch" href="/assets/js/14.5d34f1b9.js"><link rel="prefetch" href="/assets/js/15.9d50b8ac.js"><link rel="prefetch" href="/assets/js/16.2d10ac6e.js"><link rel="prefetch" href="/assets/js/17.6b60d8af.js"><link rel="prefetch" href="/assets/js/18.9fcc6cf1.js"><link rel="prefetch" href="/assets/js/19.e11f386f.js"><link rel="prefetch" href="/assets/js/20.3560ad3e.js"><link rel="prefetch" href="/assets/js/21.cf7def70.js"><link rel="prefetch" href="/assets/js/3.ca13b3ea.js"><link rel="prefetch" href="/assets/js/4.55647808.js"><link rel="prefetch" href="/assets/js/5.5bc8f8fc.js"><link rel="prefetch" href="/assets/js/6.1eca46d4.js"><link rel="prefetch" href="/assets/js/7.0ab8a2e7.js"><link rel="prefetch" href="/assets/js/8.e64ed82a.js"><link rel="prefetch" href="/assets/js/9.2de2ff45.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.01a07e0b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="LuaSTGPlus" class="logo"> <span class="site-name can-hide">LuaSTGPlus</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="https://github.com/9chu/LuaSTGPlus" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GITHUB
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/Cmdline.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  中文
+</a></li><li class="dropdown-item"><!----> <a href="/i18n/en/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="https://github.com/9chu/LuaSTGPlus" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GITHUB
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/Cmdline.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  中文
+</a></li><li class="dropdown-item"><!----> <a href="/i18n/en/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/guide/History.html" class="sidebar-link">历史</a></li><li><a href="/guide/Compile.html" class="sidebar-link">编译</a></li><li><a href="/guide/Cmdline.html" aria-current="page" class="active sidebar-link">命令行</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/Cmdline.html#preload-pack-string" class="sidebar-link">-preload-pack=string</a></li><li class="sidebar-sub-header"><a href="/guide/Cmdline.html#enable-async-loading" class="sidebar-link">-enable-async-loading</a></li><li class="sidebar-sub-header"><a href="/guide/Cmdline.html#graphics-string" class="sidebar-link">-graphics=string</a></li><li class="sidebar-sub-header"><a href="/guide/Cmdline.html#force-fullscreen" class="sidebar-link">-force-fullscreen</a></li><li class="sidebar-sub-header"><a href="/guide/Cmdline.html#render-frame-skip-integer" class="sidebar-link">-render-frame-skip=integer</a></li><li class="sidebar-sub-header"><a href="/guide/Cmdline.html#controller-to-key-config-string" class="sidebar-link">-controller-to-key-config=string</a></li><li class="sidebar-sub-header"><a href="/guide/Cmdline.html#cwd-log-file" class="sidebar-link">-cwd-log-file</a></li></ul></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>子系统</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/Subsystem/Architecture.html" class="sidebar-link">架构</a></li><li><a href="/guide/Subsystem/VfsSystem.html" class="sidebar-link">文件子系统</a></li><li><a href="/guide/Subsystem/AssetSystem.html" class="sidebar-link">资源子系统</a></li><li><a href="/guide/Subsystem/RenderSystem.html" class="sidebar-link">渲染子系统</a></li><li><a href="/guide/Subsystem/AudioSystem.html" class="sidebar-link">音频子系统</a></li><li><a href="/guide/Subsystem/ScriptSystem.html" class="sidebar-link">脚本子系统</a></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="命令行"><a href="#命令行" class="header-anchor">#</a> 命令行</h1> <p>当前版本提供了下述命令行选项供在启动时对引擎行为进行调整。</p> <p>需要注意，您必须确保编译过程中开启了<code>LSTG_PARSE_CMDLINE</code>选项，否则命令行参数不会生效。</p> <h2 id="preload-pack-string"><a href="#preload-pack-string" class="header-anchor">#</a> -preload-pack=string</h2> <p>该命令行参数可以在进入引擎循环前指定加载某个资源包（通常是<code>.zip</code>文件）。</p> <h2 id="enable-async-loading"><a href="#enable-async-loading" class="header-anchor">#</a> -enable-async-loading</h2> <p>当设置该选项时，将默认打开异步加载功能。</p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>当前版本下，异步加载尚未提供相关支撑的API，当强制打开功能时表现可能不符合预期，仅作实验用。</p></div> <h2 id="graphics-string"><a href="#graphics-string" class="header-anchor">#</a> -graphics=string</h2> <p>设置第一优先图形API，可选值包括：d3d11/d3d12/vulkan/opengl。</p> <p>若对应平台无该图形API支持，则不会有任何效果。</p> <h2 id="force-fullscreen"><a href="#force-fullscreen" class="header-anchor">#</a> -force-fullscreen</h2> <p>设置强制全屏，当打开强制全屏模式时，任何窗口模式切换API均不会有效果，将总是保持全屏无边框窗口大小。</p> <h2 id="render-frame-skip-integer"><a href="#render-frame-skip-integer" class="header-anchor">#</a> -render-frame-skip=integer</h2> <p>设置跳帧，指定一个渲染帧会跳过多少个逻辑帧。</p> <p>例如，当<code>-render-frame-skip=1</code>时，逻辑将保持 60 FPS，而渲染会降低到 30 FPS。</p> <h2 id="controller-to-key-config-string"><a href="#controller-to-key-config-string" class="header-anchor">#</a> -controller-to-key-config=string</h2> <p>设置手柄到按键映射配置。当指定该选项时，引擎将自动完成手柄到键盘按键的映射。</p> <p>配置文件使用<code>JSON</code>编写，参考配置如下：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;buttonA&quot;</span><span class="token operator">:</span> <span class="token string">&quot;z&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;buttonB&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;buttonBack&quot;</span><span class="token operator">:</span> <span class="token string">&quot;escape&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;buttonX&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;mode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;switch&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;mapping&quot;</span><span class="token operator">:</span> <span class="token string">&quot;z&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;buttonY&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;mode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;switch&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;mapping&quot;</span><span class="token operator">:</span> <span class="token string">&quot;shift&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;buttonLeftShoulder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;shift&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;buttonDPadUp&quot;</span><span class="token operator">:</span> <span class="token string">&quot;up&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;buttonDPadDown&quot;</span><span class="token operator">:</span> <span class="token string">&quot;down&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;buttonDPadLeft&quot;</span><span class="token operator">:</span> <span class="token string">&quot;left&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;buttonDPadRight&quot;</span><span class="token operator">:</span> <span class="token string">&quot;right&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;axis0&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;xNegativeMapping&quot;</span><span class="token operator">:</span> <span class="token string">&quot;left&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;xPositiveMapping&quot;</span><span class="token operator">:</span> <span class="token string">&quot;right&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;yNegativeMapping&quot;</span><span class="token operator">:</span> <span class="token string">&quot;down&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;yPositiveMapping&quot;</span><span class="token operator">:</span> <span class="token string">&quot;up&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>手柄按键类型会以<code>XBox</code>手柄为基准，在上述配置下，将会得到效果：</p> <ul><li>手柄A键映射到键盘<code>z</code>键</li> <li>手柄B键映射到键盘<code>x</code>键</li> <li>手柄Select键映射到键盘<code>ESC</code>键</li> <li>手柄X键映射到键盘<code>z</code>键，且以开关模式运作，即按下X键会让<code>z</code>键保持长按状态</li> <li>左肩键映射到键盘<code>shift</code>键</li> <li>手柄Y键映射到键盘<code>shift</code>键，且以开关模式运作</li> <li>上下左右按键映射到键盘方向键</li></ul> <p>您也可以在配置中设置模拟轴的死区等选项，其他不予赘述。</p> <h2 id="cwd-log-file"><a href="#cwd-log-file" class="header-anchor">#</a> -cwd-log-file</h2> <p>设置<code>log.txt</code>打印在当前执行路径下，而不是<code>AppData</code>中。</p> <p>仅<strong>开发模式</strong>。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/Compile.html" class="prev">
+        编译
+      </a></span> <span class="next"><a href="/guide/Subsystem/Architecture.html">
+        架构
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6029dc3c.js" defer></script><script src="/assets/js/2.eb6fdccb.js" defer></script><script src="/assets/js/10.e46689ce.js" defer></script>
+  </body>
+</html>
