@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>调试控制台 | LuaSTGPlus</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="小巧的跨平台弹幕游戏引擎">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.01a07e0b.css" as="style"><link rel="preload" href="/assets/js/app.3c9c2348.js" as="script"><link rel="preload" href="/assets/js/2.4f6d925a.js" as="script"><link rel="preload" href="/assets/js/7.2b912059.js" as="script"><link rel="prefetch" href="/assets/js/10.505ebab8.js"><link rel="prefetch" href="/assets/js/11.15d049ad.js"><link rel="prefetch" href="/assets/js/12.9035f0a7.js"><link rel="prefetch" href="/assets/js/13.b64953cc.js"><link rel="prefetch" href="/assets/js/14.2f89fad3.js"><link rel="prefetch" href="/assets/js/15.7450c0c7.js"><link rel="prefetch" href="/assets/js/16.464c7a01.js"><link rel="prefetch" href="/assets/js/17.bc01faec.js"><link rel="prefetch" href="/assets/js/18.a8e44dfb.js"><link rel="prefetch" href="/assets/js/19.5b893245.js"><link rel="prefetch" href="/assets/js/20.8ec0dc31.js"><link rel="prefetch" href="/assets/js/21.ea8c4a90.js"><link rel="prefetch" href="/assets/js/22.b91b054b.js"><link rel="prefetch" href="/assets/js/23.ca611f7b.js"><link rel="prefetch" href="/assets/js/24.d4818ce8.js"><link rel="prefetch" href="/assets/js/3.28c37bd2.js"><link rel="prefetch" href="/assets/js/4.df0ff9d7.js"><link rel="prefetch" href="/assets/js/5.a591f42b.js"><link rel="prefetch" href="/assets/js/6.bf00f34c.js"><link rel="prefetch" href="/assets/js/8.07aa19eb.js"><link rel="prefetch" href="/assets/js/9.37b98b5f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.01a07e0b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="LuaSTGPlus" class="logo"> <span class="site-name can-hide">LuaSTGPlus</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="https://github.com/9chu/LuaSTGPlus" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GITHUB
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/Console.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  中文
+</a></li><li class="dropdown-item"><!----> <a href="/i18n/en/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="https://github.com/9chu/LuaSTGPlus" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GITHUB
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/Console.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  中文
+</a></li><li class="dropdown-item"><!----> <a href="/i18n/en/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/guide/History.html" class="sidebar-link">历史</a></li><li><a href="/guide/Compile.html" class="sidebar-link">编译</a></li><li><a href="/guide/Cmdline.html" class="sidebar-link">命令行</a></li><li><a href="/guide/Console.html" aria-current="page" class="active sidebar-link">调试控制台</a></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>子系统</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/Subsystem/Architecture.html" class="sidebar-link">架构</a></li><li><a href="/guide/Subsystem/VfsSystem.html" class="sidebar-link">文件子系统</a></li><li><a href="/guide/Subsystem/AssetSystem.html" class="sidebar-link">资产子系统</a></li><li><a href="/guide/Subsystem/RenderSystem.html" class="sidebar-link">渲染子系统</a></li><li><a href="/guide/Subsystem/AudioSystem.html" class="sidebar-link">音频子系统</a></li><li><a href="/guide/Subsystem/ScriptSystem.html" class="sidebar-link">脚本子系统</a></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="调试控制台"><a href="#调试控制台" class="header-anchor">#</a> 调试控制台</h1> <p>当运行在<code>开发模式</code>下，可以通过<code>~</code>键唤出调试控制台。</p> <p><img src="/assets/img/console.ac114d16.png" alt="控制台"></p> <p>调试控制台可以显示当前的日志信息。如果系统打印出 Error 级别日志，调试控制台也会自动弹出。</p> <p>你可以在调试控制台的命令行中执行任意 Lua 语句，同时控制台会显示语句的返回值。</p> <p>通过在日志文本框中单击鼠标右键还可以切出其他子项调试窗口。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/Cmdline.html" class="prev">
+        命令行
+      </a></span> <span class="next"><a href="/guide/Subsystem/Architecture.html">
+        架构
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3c9c2348.js" defer></script><script src="/assets/js/2.4f6d925a.js" defer></script><script src="/assets/js/7.2b912059.js" defer></script>
+  </body>
+</html>
